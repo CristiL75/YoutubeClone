@@ -18,9 +18,9 @@ const VideoDetail = () => {
       .then((data) => setVideos(data.items));
   }, [id]);
 
-  const { snippet, statistics } = videoDetail || {}; // Destructure snippet and statistics, provide an empty object as default value
-  const { title: snippetTitle, channelId, channelTitle } = snippet || {}; // Destructure title, channelId, and channelTitle from snippet, provide an empty object as default value
-  const { viewCount, likeCount } = statistics || {}; // Destructure viewCount and likeCount from statistics, provide an empty object as default value
+  const { snippet, statistics } = videoDetail || {}; 
+  const { title: snippetTitle, channelId, channelTitle } = snippet || {}; 
+  const { viewCount, likeCount } = statistics || {}; 
 
   return (
     <Box minHeight="95vh">
